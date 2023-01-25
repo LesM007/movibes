@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Movies from './pages/Movies';
 import TVSeries from './pages/TVSeries';
 import Upcoming from './pages/Upcoming';
+import NotFound from './pages/NotFound';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<App />} >
