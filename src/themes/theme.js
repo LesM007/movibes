@@ -3,7 +3,10 @@ export const theme = {
         primary: "#3DD2CC",
         secondary: "#E8E8E8",
         tertiary: "#212121",
-        standard: "#666666"
+        standard: "#666666",
+        backdrop: "#191919",
+        pri40: "#3DD2CC6D",
+        txtshadow: "#000000e3"
     }
 };
 

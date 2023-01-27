@@ -4,6 +4,7 @@ import { theme } from "../themes/theme";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import NavQuiz from "../components/NavQuiz";
+import LogoutBtn from "../components/LogoutBtn";
 
 const Header = () => {
     const style=css`
@@ -20,6 +21,7 @@ const Header = () => {
         <Logo />
         <Navigation />
         <NavQuiz />
+        <LogoutBtn />
         </div>
      );
 }
