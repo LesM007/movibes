@@ -1,8 +1,13 @@
 import { Outlet } from "react-router-dom";
+import StyledSearchBar from "../components/StyledSearchBar";
+
 
 const Main = () => {
-    return (   
-        <Outlet />
+    return (
+        <>  
+            <StyledSearchBar/> 
+            <Outlet />
+        </>
         );
 }
  

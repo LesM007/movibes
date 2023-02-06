@@ -6,7 +6,8 @@ export const theme = {
         standard: "#666666",
         backdrop: "#191919",
         pri40: "#3DD2CC6D",
-        txtshadow: "#000000e3"
+        txtshadow: "#000000e3",
+        sec10:"#E8E8E88b"
     }
 };
 

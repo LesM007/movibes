@@ -17,12 +17,12 @@ const Header = () => {
         `
 
     return ( 
-    <div css={style}>
+    <header css={style}>
         <Logo />
         <Navigation />
         <NavQuiz />
         <LogoutBtn />
-        </div>
+        </header>
      );
 }
  
