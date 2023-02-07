@@ -17,7 +17,7 @@ const Header = () => {
         `
 
     return ( 
-    <header css={style}>
+    <header className="navigation__main" css={style}>
         <Logo />
         <Navigation />
         <NavQuiz />

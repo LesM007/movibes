@@ -8,14 +8,14 @@ function App() {
 
   return (
     <div className="App">
-        <GlobalStyles />
+        
 
         <Header />
 
         <Main />
 
         <Footer />
-
+        <GlobalStyles />
     </div>
   );
 }

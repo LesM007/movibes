@@ -4,10 +4,10 @@ import StyledSearchBar from "../components/StyledSearchBar";
 
 const Main = () => {
     return (
-        <>  
+        <main>
             <StyledSearchBar/> 
             <Outlet />
-        </>
+        </main>
         );
 }
  

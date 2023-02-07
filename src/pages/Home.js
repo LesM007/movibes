@@ -17,7 +17,7 @@ const Home = () => {
 
     const {data: images, loading } = useAxios(url);
 
-    images && console.log(images.backdrops)
+    //images && console.log(images.backdrops)
 
     return loading ? <p>loading...</p> :(
         <div css={ImgContainer}>

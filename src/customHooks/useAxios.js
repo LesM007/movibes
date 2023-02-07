@@ -16,7 +16,7 @@ const useAxios = (url) => {
            .catch(() => setError("Something went wrong try later"))
            .finally(() => setLoading(false));
         }, [url]);
-        data && console.log(data)
+        //data && console.log(data)
         return { data, error, loading }
 }
  

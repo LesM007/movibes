@@ -19,7 +19,7 @@ const StyledSearchBar = ({placeholder}) => {
     }
 
     return ( 
-        <form onSubmit={handleSubmit}>
+        <form className="search header__search" onSubmit={handleSubmit}>
             <OnlytextButton type='submit' />
             <FaSearch />
             <input

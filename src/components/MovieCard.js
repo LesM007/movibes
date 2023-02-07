@@ -4,7 +4,7 @@ import { theme } from "../themes/theme";
 import { FaStar } from "react-icons/fa";
 
 
-const MovieCard = ({children, to, rating}) => {
+const MovieCard = ({movie}) => {
 
     const cardStyle = css`
         max-width: 12.5rem;
@@ -19,10 +19,10 @@ const MovieCard = ({children, to, rating}) => {
 
     return ( 
         <>
-        <article css={cardStyle} to={to}>
-        {children}
+        <article css={cardStyle}>
+        <p>{movie.title}</p>
             <section css={rateStyle}>
-                <FaStar />{rating}
+                <FaStar /><span>{movie.vote_average}</span>
             </section>
         </article>
         </>  

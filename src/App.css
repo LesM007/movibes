@@ -1,5 +1,5 @@
-.App {
-  display: flex;
-  flex-direction: row;
-}
-
+.App{
+    display: grid;
+    grid-template-columns: 14.25rem 1fr 16rem;
+  }        
+ 
