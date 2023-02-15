@@ -15,14 +15,22 @@ const MovieCard = ({movie}) => {
     const rateStyle = css`
         background-color: ${theme.colors.sec10};
         mix-blend-mode: screen;
+
+        & span{
+            color: ${theme.colors.sec10};
+
+            & svg{
+                color: ${theme.colors.star};
+            }
+        }
         `
 
     return ( 
         <>
         <article css={cardStyle}>
-        <p>{movie.title}</p>
+        <img src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} style={{borderRadius: "1.25rem"}}/>
             <section css={rateStyle}>
-                <FaStar /><span>{movie.vote_average}</span>
+            <span><FaStar />{movie.vote_average}</span>
             </section>
         </article>
         </>  

@@ -4,7 +4,7 @@ import OnlytextButton from "./OnlytextButton";
 const LogoutBtn = () => {
 
     return ( 
-    <OnlytextButton greyBtn><FaSignOutAlt />Log out</OnlytextButton>
+    <OnlytextButton className="button__text" greyBtn><FaSignOutAlt style={{transForm: "translateY(.12rem)"}}/>Log out</OnlytextButton>
     );
 }
  

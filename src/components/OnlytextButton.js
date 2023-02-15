@@ -11,8 +11,8 @@ const OnlytextButton = ({children, rounded, greyBtn}) => {
         color: ${rounded ? theme.colors.primary : greyBtn ? theme.colors.standard : theme.colors.secondary};
         border: none;
         padding: ${rounded ? "0.3rem 2rem" : greyBtn ? "1.5rem 3rem": "0.5rem"};
-        border-radius: ${rounded ? "2rem" : "0.5rem"};
-        font-weight: ${greyBtn || rounded ? "600" : "500"};
+        border-radius: ${rounded ? "2rem" : greyBtn ? "2rem" : "0.5rem"};
+        font-weight: ${rounded ? "500" : greyBtn ? "500": "500"};
 
         & svg {
                 margin-right: ${ greyBtn || rounded ? "0.6rem" : "5rem" };

@@ -25,8 +25,6 @@ const GlobalStyles = () => {
           .posiRelativ{
             position: relative;
           }
- 
-
           `
         }
   />

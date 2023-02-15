@@ -7,7 +7,6 @@ const NavigationLink = ({children,to}) => {
 
     const stdStyle = css`
         padding: 1.5rem 3rem;
-        background-color: ${theme};
         color: ${theme.colors.standard};
         text-decoration: none;
         
