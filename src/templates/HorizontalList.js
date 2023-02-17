@@ -1,5 +1,5 @@
 import useAxios from "../customHooks/useAxios";
-import MovieCard from "./MovieCard";
+import MovieCard from "../components/MovieCard";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { Link } from "react-router-dom";

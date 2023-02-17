@@ -11,7 +11,6 @@ import Home from "./views/Home";
 import Movies from "./views/Movies";
 import TVSeries from "./views/TVSeries";
 import Upcoming from "./views/Upcoming";
-import Details from "./views/Details";
 import Results from "./views/Results";
 import NotFound from "./views/NotFound";
 
@@ -19,11 +18,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
-      <Route path="/movies" element={<Movies />} />
+      <Route path="/movies/:id" element={<Movies />} />
       <Route path="/tvseries" element={<TVSeries />} />
       <Route path="/upcoming" element={<Upcoming />} />
       <Route path="/results" element={<Results />} />
-      <Route path="/details/:id" element={<Details />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   )

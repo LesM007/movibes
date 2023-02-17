@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import HorizontalList from "../components/HorizontalList";
+import HorizontalList from "../templates/HorizontalList";
 import { theme } from "../themes/theme";
 import FeaturedMovie from "../components/FeaturedMovie";
 

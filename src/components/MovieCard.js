@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const MovieCard = ({ movie }) => {
-  const link = "/details/" + movie.title;
+  const link = "/movies/" + movie.title;
 
   const cardStyle = css`
     max-width: 12.5rem;
