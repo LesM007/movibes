@@ -2,31 +2,31 @@ import useAxios from "../customHooks/useAxios";
 import MovieCard from "./MovieCard";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import { Link } from "react-router-dom";
 
+const HorizontalList = ({ url, headline, type }) => {
+  const { data: movies, loading: moviesLoading } = useAxios(url);
+  //movies && console.log(movies);
 
-const HorizontalList = () => {
-    const url =  "https://api.themoviedb.org/3/movie/popular?api_key=d27cfb6baa191e1cd0eaa5f32b9e1d80&language=en-US";
+  const style = css`
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    max-width: 57rem;
+  `;
 
-    const {data: movies, loading} = useAxios(url);
-    movies && console.log(movies)
+  return moviesLoading ? (
+    <p>loading...</p>
+  ) : (
+    <article>
+      <h3>{headline}</h3>
+      <section css={style}>
+        {movies?.results.map((movie) => (
+          <MovieCard key={movie.id} movie={movie} />
+        ))}
+      </section>
+    </article>
+  );
+};
 
-    const style=css`
-        display: flex;
-        flex-direction: row;
-        overflow-x: hidden;
-        overflow-y: auto;
-        max-width: 57rem;
-        `
-
-    return loading ? <p>loading...</p> : ( 
-        <article style={{overflowX : "scroll"}}>
-            <h3>Trending</h3>
-            <div css={style}>
-        {movies.results.map( (movie) => (<MovieCard key={movie.id} movie={movie}/>)
-        )}
-        </div>
-        </article>
-     );
-}
- 
 export default HorizontalList;
