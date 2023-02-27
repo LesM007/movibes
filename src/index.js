@@ -18,10 +18,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
-      <Route path="/movies/:id" element={<Movies />} />
-      <Route path="/tvseries" element={<TVSeries />} />
-      <Route path="/upcoming" element={<Upcoming />} />
-      <Route path="/results" element={<Results />} />
+      <Route path="movies/:id" element={<Movies />} />
+      <Route path="tvseries" element={<TVSeries />} />
+      <Route path="upcoming" element={<Upcoming />} />
+      <Route path="results" element={<Results />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   )
